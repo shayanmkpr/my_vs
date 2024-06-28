@@ -1,0 +1,80 @@
+{
+    "python.defaultInterpreterPath": "C:\\Users\\SHAAHIN\\anaconda3\\python.exe",
+    "workbench.colorTheme",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "constant.numeric"
+                ],
+                "settings": {
+                    "foreground": "#ff0000" // Change this to the desired color for numbers
+                }
+            },
+            {
+                "scope": [
+                    "variable",
+                    "variable.other"
+                ],
+                "settings": {
+                    "foreground": "#00ffd5" // Change this to the desired color for variables
+                }
+            },
+            {
+                "scope": [
+                    "comment",
+                    "comment.block.documentation"
+                ],
+                "settings": {
+                    "foreground": "#bb00ff" // Change this to the desired color for comments
+                }
+            },      
+            // Function names
+            {
+              "scope": [
+                "entity.name.function"
+              ],
+              "settings": {
+                "foreground": "#008cff" // Change this to your desired color
+              }
+            },
+            {
+                "scope": [
+                  "storage.type" // For data types like `int`, `float`, `str`
+                ],
+                "settings": {
+                  "foreground": "#0dff00" // Set a green color for data types
+                }
+              },
+            //   {
+            //     "scope": [
+            //       "meta.method-call.python" // Target chained method calls
+            //     ],
+            //     "settings": {
+            //       "foreground": "#ff00e6" // Change this to your desired color
+            //     }
+            //   },
+          
+              {
+                "scope": [
+                  "meta.function-call.python" // Target all function calls
+                ],
+                "settings": {
+                  "foreground": "#73ff00" // Change this to your desired color (can be different from previous rule)
+                }
+                },
+
+                // Strings
+                {
+                    "scope": [
+                    "string"
+                    ],
+                    "settings": {
+                    "foreground": "#7aa700" // Change this to your desired color
+                    }
+                }
+            
+            
+        ]
+    }
+}
