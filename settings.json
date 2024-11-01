@@ -1,79 +1,162 @@
 {
-    "workbench.colorTheme",
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": [
-                    "constant.numeric"
-                ],
-                "settings": {
-                    "foreground": "#ff0000" // Change this to the desired color for numbers
-                }
-            },
-            {
-                "scope": [
-                    "variable",
-                    "variable.other"
-                ],
-                "settings": {
-                    "foreground": "#00ffd5" // Change this to the desired color for variables
-                }
-            },
-            {
-                "scope": [
-                    "comment",
-                    "comment.block.documentation"
-                ],
-                "settings": {
-                    "foreground": "#bb00ff" // Change this to the desired color for comments
-                }
-            },      
-            // Function names
-            {
-              "scope": [
-                "entity.name.function"
-              ],
-              "settings": {
-                "foreground": "#008cff" // Change this to your desired color
-              }
-            },
-            {
-                "scope": [
-                  "storage.type" // For data types like `int`, `float`, `str`
-                ],
-                "settings": {
-                  "foreground": "#0dff00" // Set a green color for data types
-                }
-              },
-            //   {
-            //     "scope": [
-            //       "meta.method-call.python" // Target chained method calls
-            //     ],
-            //     "settings": {
-            //       "foreground": "#ff00e6" // Change this to your desired color
-            //     }
-            //   },
-          
-              {
-                "scope": [
-                  "meta.function-call.python" // Target all function calls
-                ],
-                "settings": {
-                  "foreground": "#73ff00" // Change this to your desired color (can be different from previous rule)
-                }
-                },
 
-                // Strings
-                {
+  // GET THE SYNTAX HIGHKIGHTER EXTENSION
+  "window.menuBarVisibility": "toggle",
+    "editor.fontSize": 16,
+      // "workbench.editor.showTabs": "none",
+      "telemetry.telemetryLevel": "off",
+      // "workbench.sideBar.location": "right",
+      "workbench.panel.defaultLocation": "right",
+      "workbench.colorCustomizations": {
+      
+  
+  
+        "editor.background": "#111622",  // Main editor background color
+        "notebook.cellEditorBackground": "#151827",
+        "notebook.cellBorderColor" :"#00ffc8",
+  
+  
+        "editorCursor.foreground": "#ff0000",
+        // "editor.lineHighlightBackground": "#0033cc"
+        "editor.selectionBackground": "#1b0b66"
+  
+      },
+       "editor.tokenColorCustomizations": {
+           "textMateRules": [  
+
+               {
+                 "scope": [
+                   "keyword.operator"  // Targeting operators
+                 ],
+                 "settings": {
+                   "foreground": "#d0ff00"  // Replace with your desired color (cyan, for example)
+                 }
+               },
+               {
+                 "scope": [
+                   "variable",
+                   "variable.other",
+                   "variable.parameter",
+                   "variable.language"
+                 ],
+                 "settings": {
+                   "foreground": "#00ffd5",
+                  //  "fontStyle": "italic"
+                 }
+               },
+               {
+                   "scope": [
+                       "comment",
+                       "comment.block.documentation"
+                   ],
+                   "settings": {
+                       "fontStyle": "italic",
+                       "foreground": "#bb00ff" // Change this to the desired color for comments
+                   }
+               },      
+               // Function names
+               {
+                 "scope": [
+                   "entity.name.function"
+                 ],
+                 "settings": {
+                   "foreground": "#008cff" // Change this to your desired color
+                 }
+               },
+               {
+                   "scope": [
+                     "storage.type" // For data types like `int`, `float`, `str`
+                   ],
+                   "settings": {
+                     "foreground": "#0dff00" // Set a green color for data types
+                   }
+                 },
+                 {
+                   "scope": [
+                     "meta.method-call.python" // Target chained method calls
+                   ],
+                   "settings": {
+                     "foreground": "#ff00e6" // Change this to your desired color
+                   }
+                 },
+                 {
+                   "scope": [
+                     "meta.function-call.python", // Target all function calls
+                   ],
+                   "settings": {
+                     "foreground": "#0075e2" // Change this to your desired color (can be different from previous rule)
+                   }
+                   },
+                   {
+                     "scope": [
+                       "support.function",           // General built-in functions
+                       "support.function.builtin"    // More specific to built-in functions like print, len
+                     ],
+                     "settings": {
+                       "foreground": "#00a2ff"  // Replace with your desired color for built-in functions (e.g., purple)
+                     }
+                   },
+                   // Strings
+                   {
+                       "scope": [
+                       "string"
+                       ],
+                       "settings": {
+                       "fontStyle": "italic bold",
+                       "foreground": "#b39905" // Change this to your desired color
+                       }
+                   },
+                   {
                     "scope": [
-                    "string"
+                      "support.function",
+                      "entity.name.module",
+                      "entity.name.namespace" // Add this to cover different cases
                     ],
                     "settings": {
-                    "foreground": "#7aa700" // Change this to your desired color
+                      "foreground": "#6200ff"  // Change this to your desired color (e.g., purple)
                     }
-                }
-            
-            
-        ]
-    }
-}
+                  }
+                  
+              
+              
+          ]
+        },
+        "indentRainbow.indicatorStyle": "light",
+        "indentRainbow.lightIndicatorStyleLineWidth": 3,
+        "syntax.highlightLanguages": [
+          // "c",
+          // "cpp",
+          "python",
+          // "typescript",
+          // "typescriptreact",
+          // "javascript",
+          // "go",
+          // "rust",
+          // "php",
+          // "ruby",
+          // "shellscript",
+          // "ocaml",
+          // "lua"
+        ],
+        "syntax.debugDepth": 1,
+        "indentRainbow.ignoreErrorLanguages": [
+          "json",
+          "c",
+          "cpp",
+          "python",
+          "typescript",
+          "typescriptreact",
+          "javascript",
+          "go",
+          "rust",
+          "php",
+          "ruby",
+          "shellscript",
+          "ocaml",
+          "lua",
+
+          "markdown"
+        ],
+        "synthwave84.brightness": 0.7,
+        "workbench.colorTheme": "Better Solarized Dark Italics",
+  }
